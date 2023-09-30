@@ -1,0 +1,4 @@
+aiogram==2.14
+requests==2.26.0
+python-telegram-bot==20.9
+wikipedia==1.4.0 
