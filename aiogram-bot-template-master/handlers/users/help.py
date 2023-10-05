@@ -1,5 +1,5 @@
 from aiogram import types
-from aiogram.dispatcher.filters.builtin import CommandHelp
+from aiogram.dispatcher.filters.builtin import CommandHelp,CommandSettings
 
 from loader import dp
 
@@ -8,6 +8,13 @@ from loader import dp
 async def bot_help(message: types.Message):
     text = ("Buyruqlar: ",
             "/start - Botni ishga tushirish",
-            "/help - Yordam")
-    
+            "/help - Yordam",
+            "/settings - Sozlamalar")
+
     await message.answer("\n".join(text))
+
+
+@dp.message_handler(CommandSettings())
+async def bot_sittings(message: types.Message):
+    text = ("Sozlamalar")
+    await message.answer(text)
