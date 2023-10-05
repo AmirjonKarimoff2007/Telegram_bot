@@ -1,5 +1,9 @@
 aiogram==2.14
 requests==2.26.0
 python-telegram-bot==20.9
+<<<<<<< HEAD
 wikipedia==1.4.0  # Add the desired version of wikipedia
 # Add other dependencies as needed
+=======
+wikipedia==1.4.0 
+>>>>>>> origin/main
