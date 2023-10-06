@@ -7,7 +7,8 @@ from loader import dp
 async def bot_start(message: types.Message):
     args = message.get_args()
     text = f"salom,{message.from_user.full_name}!\n"
-    text += f"Sizni {args} tavsiya qildi"
+    text += f"Sizni {args} tavsiya qildi\n"
+    text += "Xush kelipsiz siz bizning qadrli mijozimizsiz!"
     await message.answer(text)
 @dp.message_handler(CommandStart())
 async def bot_start(message: types.Message):
